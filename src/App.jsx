@@ -2,13 +2,13 @@ import { useFinanceStore } from './store';
 import { LayoutDashboard, Receipt, Settings, User } from 'lucide-react';
 import SummaryCards from './components/SummaryCards';
 import DashboardCharts from './components/DashboardCharts';
+import TransactionTable from './components/TransactionTable';
 
 export default function App() {
   const { role, toggleRole } = useFinanceStore();
 
   return (
     <div className="flex h-screen bg-slate-50 font-sans text-slate-900">
-      
       <aside className="w-64 bg-white border-r border-slate-200 flex flex-col hidden md:flex">
         <div className="p-6 border-b border-slate-200">
           <h1 className="text-xl font-bold tracking-tight text-indigo-600">FinanceDash</h1>
@@ -32,7 +32,6 @@ export default function App() {
       </aside>
 
       <main className="flex-1 flex flex-col h-screen overflow-hidden">
-        
         <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-8 shrink-0">
           <h2 className="text-lg font-semibold text-slate-800">Dashboard Overview</h2>
           
@@ -55,9 +54,10 @@ export default function App() {
         </header>
 
         <div className="flex-1 overflow-y-auto p-8">
-          <div className="max-w-5xl mx-auto space-y-6">
+          <div className="max-w-5xl mx-auto space-y-6 pb-12">
             <SummaryCards />
             <DashboardCharts />
+            <TransactionTable />
           </div>
         </div>
       </main>
