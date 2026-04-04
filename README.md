@@ -1,17 +1,48 @@
-# React + Vite
+# FinanceDash 💸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Personal Finance Dashboard built with React, Vite, and Tailwind CSS. This project serves as a comprehensive frontend development assessment, demonstrating proficiency in state management, data visualization, responsive design, and role-based access control (RBAC).
 
-Currently, two official plugins are available:
+![FinanceDash Preview](https://via.placeholder.com/1200x600/0f172a/ffffff?text=FinanceDash+Preview) *(Note: Replace this with an actual screenshot of your app)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Role-Based Access Control (RBAC):** Toggle between "Admin" and "Viewer" roles. Admins have exclusive rights to add new transactions, delete existing ones, and clear all system data.
+* **Data Visualization:** Interactive charts built with Recharts. Features an Area Chart for balance trends and a Donut Chart for spending breakdowns.
+* **Persistent State Management:** Powered by Zustand. All transactions, theme preferences, and UI states are automatically saved to `localStorage` so data survives page refreshes.
+* **Advanced Filtering & Pagination:** Instantly filter transactions by name, category, or type (Income/Expense). Includes functional pagination for clean data presentation.
+* **Export to CSV:** Seamlessly export currently filtered transaction data into a downloadable `.csv` file.
+* **Premium UI/UX:** * Fully functional Light/Dark mode toggle.
+    * Modern "Glassmorphism" design system with frosted backgrounds and subtle blurs.
+    * Smooth page transitions and staggered rendering animations using Framer Motion.
+    * Professional toast notifications for user feedback (via Sonner).
+* **100% Responsive:** Features a sliding mobile sidebar and optimized layouts for tablet and desktop viewports.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# zorvyn-assignment
+## 🛠️ Tech Stack
+
+* **Framework:** React 18 (via Vite)
+* **Styling:** Tailwind CSS
+* **State Management:** Zustand (with persist middleware)
+* **Charts:** Recharts
+* **Animations:** Framer Motion
+* **Icons:** Lucide React
+* **Notifications:** Sonner
+
+---
+
+## 🚀 Getting Started
+
+To run this project locally, follow these steps:
+
+### Prerequisites
+Make sure you have Node.js (v18+ recommended) and npm installed on your machine.
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/yourusername/finance-dash.git](https://github.com/yourusername/finance-dash.git)
+   cd finance-dash
