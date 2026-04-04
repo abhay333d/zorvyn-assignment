@@ -2,7 +2,7 @@
 
 A modern, responsive Personal Finance Dashboard built with React, Vite, and Tailwind CSS. This project serves as a comprehensive frontend development assessment, demonstrating proficiency in state management, data visualization, responsive design, and role-based access control (RBAC).
 
-![FinanceDash Preview](https://via.placeholder.com/1200x600/0f172a/ffffff?text=FinanceDash+Preview) *(Note: Replace this with an actual screenshot of your app)*
+![FinanceDash Preview](./image.png)
 
 ---
 
