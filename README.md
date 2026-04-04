@@ -70,19 +70,4 @@ Make sure you have Node.js (v18+ recommended) and npm installed on your machine.
 
 ## 🌍 Deployment
 
-This application is optimized for seamless deployment on [Vercel](https://vercel.com).
-
-1. **Push your code to a Git provider**
-   Ensure your local repository is pushed to GitHub, GitLab, or Bitbucket.
-
-2. **Import the Project into Vercel**
-   Log in to your Vercel dashboard, click **Add New Project**, and import your `finance-dash` repository.
-
-3. **Verify Build Settings**
-   Vercel will automatically detect that this is a Vite project. Leave the default build settings exactly as they are:
-   * **Framework Preset:** Vite
-   * **Build Command:** `npm run build`
-   * **Output Directory:** `dist`
-
-4. **Deploy**
-   Click **Deploy**. Vercel will build your application and provide a live production URL within seconds. Every subsequent push to your `main` branch will automatically trigger a new deployment.
+This application is deployed on Vercel [FinanceDash](https://finance-dash-hazel.vercel.app/).
