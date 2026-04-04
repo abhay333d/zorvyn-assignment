@@ -20,9 +20,12 @@ export default function SummaryCards() {
       currency: "USD",
     }).format(value);
 
+  // Common glassmorphism class for all three cards
+  const glassCardClass = "bg-white/60 dark:bg-slate-900/50 backdrop-blur-xl rounded-xl border border-slate-200/50 dark:border-slate-800/50 shadow-sm p-6 flex flex-col justify-between transition-colors duration-200";
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 flex flex-col justify-between transition-colors duration-200">
+      <div className={glassCardClass}>
         <div className="flex items-center justify-between">
           <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
             Total Balance
@@ -41,7 +44,7 @@ export default function SummaryCards() {
         </div>
       </div>
 
-      <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 flex flex-col justify-between transition-colors duration-200">
+      <div className={glassCardClass}>
         <div className="flex items-center justify-between">
           <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
             Total Income
@@ -57,7 +60,7 @@ export default function SummaryCards() {
         </div>
       </div>
 
-      <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 flex flex-col justify-between transition-colors duration-200">
+      <div className={glassCardClass}>
         <div className="flex items-center justify-between">
           <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
             Total Expenses
