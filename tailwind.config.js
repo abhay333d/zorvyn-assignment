@@ -4,8 +4,9 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}", // <-- Tells Tailwind to scan all React components
   ],
+  darkMode: "class",
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
